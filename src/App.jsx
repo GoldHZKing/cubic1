@@ -3,6 +3,7 @@ import HeaderView from "./components/header/HeaderView";
 import HerosView from "./components/Heros/HerosView";
 
 import CenterContent from "./components/CenterContent/CenterContent";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <HerosView />
 
       <CenterContent />
+      <Footer />
     </>
   );
 }
