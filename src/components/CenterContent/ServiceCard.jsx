@@ -9,7 +9,7 @@ function ServiceCard(probs) {
           `${bgColor}`
         }
       >
-        <dev className={" text-3xl " + `${color}`}>{icon}</dev>
+        <div className={" text-3xl " + `${color}`}>{icon}</div>
       </div>
 
       <p className={"text-2xl font-bold"}>{name}</p>

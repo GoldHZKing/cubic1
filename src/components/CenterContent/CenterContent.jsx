@@ -39,13 +39,11 @@ export default function CenterContent() {
       <div className="">
         <div className="text-center">
           <p className="italic font-semibold"> Our Main Services</p>
-          <h1 className="text-5xl text-teal-700 font-light">
-            Professional Sales & Service
-          </h1>
+          <h1 className="text-5xl text-teal-700 font-light">Sales & Service</h1>
         </div>
         <div className="sm:flex flex-wrap  text-wrap w-full sm:justify-around py-10">
           {data.map((items) => (
-            <div className="  flex  justify-center py-5">
+            <div key={items.name} className="  flex  justify-center py-5">
               <ServiceCard data={items} />
             </div>
           ))}

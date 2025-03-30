@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuItems from "./MenuItems";
 import icon from "/vite.svg";
 import MenuBurger from "../LogoComponents/MenuBurger";
 import { CgClose } from "react-icons/cg";
 
-export default function HeaderView() {
-  const [menuClicked, setMenuClicked] = useState(false);
+export default function HeaderView(clicked) {
+  const [menuClicked, setMenuClicked] = useState(clicked.clicked);
   function menuIconOnClick() {
     setMenuClicked(!menuClicked);
   }
+
   return (
     <>
       <div className={"sticky  top-0  shadow-md backdrop-blur-md "}>
@@ -17,7 +18,7 @@ export default function HeaderView() {
             <img src={icon} alt="" width={40} />
           </div>
 
-          <MenuItems   />
+          <MenuItems />
 
           <div
             className=" sm:hidden cursor-pointer duration-500 transition-all"
