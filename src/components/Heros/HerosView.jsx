@@ -10,7 +10,7 @@ export default function HerosView() {
         <div className="flex w-full lg:w-1/2">
           <div className="  flex items-center flex-col justify-center mx-auto mb-12 ">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold mx-auto ">
-              CCTV & PC's
+              Cubic 
             </h1>
             <div className="text-slate-700 py-7 text-center">
               <p>Empowering Your Safety with Technology</p>

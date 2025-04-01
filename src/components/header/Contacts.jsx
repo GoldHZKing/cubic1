@@ -8,7 +8,7 @@ export default function Contacts() {
     location: "Coimbatore",
   };
   return (
-    <div className="md:flex gap-6 items-center">
+    <div className="lg:flex gap-6 items-center">
       <div className="flex gap-1 items-center text-center  justify-center  ">
         <FcIphone />
         <p>{contacts.mobile}</p>
@@ -21,7 +21,7 @@ export default function Contacts() {
         <div className="text-red-700">
           <IoLocationOutline />
         </div>
-        <p>{contacts.email}</p>
+        <p>{contacts.location}</p>
       </div>
     </div>
   );
