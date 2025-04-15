@@ -35,7 +35,7 @@ export default function CenterContent() {
     },
   ];
   return (
-    <div className="container w-5/6  mx-auto py-12">
+    <div id="products" className="container w-5/6  mx-auto py-12">
       <div className="">
         <div className="text-center">
           <p className="italic font-semibold"> Our Main Services</p>

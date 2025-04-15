@@ -1,31 +1,20 @@
-import { useEffect, useState } from "react";
-import HeaderView from "./components/header/HeaderView";
 import HerosView from "./components/Heros/HerosView";
 
-import CenterContent from "./components/CenterContent/CenterContent";
-import Footer from "./components/Footer/Footer";
-import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Home from "./components/Home/Home";
 
 function App() {
-  // const myDiv = document.querySelector("#myDiv");
-  // myDiv.addEventListener("click", menuIconOnClick);
-  const [menuClicked, setMenuClicked] = useState(false);
-  function menuIconOnClick() {
-    console.log("hhhhhhhhhhhhhhhhhh");
-
-    setMenuClicked(!menuClicked);
-    console.log(menuClicked);
-  }
+  const route = createBrowserRouter([
+    {
+      path: "/cubic1",
+      element: <Home />,
+    },
+  ]);
   return (
     <>
-      <HeaderView clicked={menuClicked} />
-
-      <HerosView />
-
-      <WhyChooseUs />
-
-      <CenterContent />
-      <Footer />
+      <RouterProvider router={route}>
+        <Outlet />
+      </RouterProvider>
     </>
   );
 }

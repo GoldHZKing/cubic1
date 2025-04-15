@@ -8,7 +8,7 @@ export default function Contacts() {
     location: "Coimbatore",
   };
   return (
-    <div className="lg:flex gap-6 items-center">
+    <div className="sm:flex gap-6 items-center">
       <div className="flex gap-1 items-center text-center  justify-center  ">
         <FcIphone />
         <p>{contacts.mobile}</p>

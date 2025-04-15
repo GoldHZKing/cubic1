@@ -19,7 +19,7 @@ export default function Footer() {
     pinCode: "641125",
   };
   return (
-    <div className="bg-slate-800 text-white w-full h-1/2 py-12">
+    <div id="contactUs" className="bg-slate-800 text-white w-full h-1/2 py-12">
       <div className="container mx-auto ">
         <div className=" text-center justify-center">
           <h1 className="text-2xl underline underline-offset-8 ">Contact Us</h1>

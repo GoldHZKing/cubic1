@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
   ];
   return (
     <>
-      <section className="bg-gray-50 my-2">
+      <section id="whyChooseUs" className="bg-gray-50 my-2">
         <div className="container  w-5/6 py-8 px-2  mx-auto md:flex">
           <div className=" ">
             <h1 className=" font-semibold text-blue-600">
